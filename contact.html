@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact LockGram | Get in Touch</title>
+    <meta name="description" content="Contact LockGram - Get in touch with our team for support, partnerships, media inquiries, or general questions about our Web3 social platform.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://i.imgur.com/b8Iyclt.png" alt="LockGram Logo" class="logo-icon">
+                <span class="nav-logo">LockGram</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="security.html" class="nav-link">Security</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="cta-button primary" onclick="openAndroidApp()">
+                    <span class="button-icon">📱</span>
+                    Get Android Early Access
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Contact LockGram
+                        <span class="hero-accent">We're Here to Help</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Have questions about LockGram? Need support? Want to explore partnership opportunities? We'd love to hear from you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Choose the best way to reach us based on your needs</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>General Support</h3>
+                    <p>Questions about using LockGram, account issues, or technical support.</p>
+                    <a href="/cdn-cgi/l/email-protection#bfcccacfcfd0cdcbffd3d0dcd4d8cdded291dcd0d2" class="contact-link"><span class="__cf_email__" data-cfemail="94e7e1e4e4fbe6e0d4f8fbf7fff3e6f5f9baf7fbf9">[email&#160;protected]</span></a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🤝</div>
+                    <h3>Partnerships</h3>
+                    <p>Business partnerships, integration opportunities, and collaboration inquiries.</p>
+                    <a href="/cdn-cgi/l/email-protection#5727362523393225243f3e2724173b38343c3025363a7934383a" class="contact-link"><span class="__cf_email__" data-cfemail="62120310160c0710110a0b1211220e0d01090510030f4c010d0f">[email&#160;protected]</span></a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📰</div>
+                    <h3>Media & Press</h3>
+                    <p>Press inquiries, media kit requests, and interview requests.</p>
+                    <a href="/cdn-cgi/l/email-protection#7b0b091e08083b171418101c091a1655181416" class="contact-link"><span class="__cf_email__" data-cfemail="9aeae8ffe9e9daf6f5f9f1fde8fbf7b4f9f5f7">[email&#160;protected]</span></a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>Careers</h3>
+                    <p>Join our team! Open positions and career opportunities.</p>
+                    <a href="/cdn-cgi/l/email-protection#e88b899a8d8d9a9ba884878b838f9a8985c68b8785" class="contact-link"><span class="__cf_email__" data-cfemail="5f3c3e2d3a3a2d2c1f33303c34382d3e32713c3032">[email&#160;protected]</span></a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🔒</div>
+                    <h3>Security</h3>
+                    <p>Report security vulnerabilities or security-related questions.</p>
+                    <a href="/cdn-cgi/l/email-protection#097a6c6a7c7b607d704965666a626e7b6864276a6664" class="contact-link"><span class="__cf_email__" data-cfemail="6f1c0a0c1a1d061b162f03000c04081d0e02410c0002">[email&#160;protected]</span></a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📄</div>
+                    <h3>Legal</h3>
+                    <p>Legal inquiries, compliance questions, and official notices.</p>
+                    <a href="/cdn-cgi/l/email-protection#34585153555874585b575f534655591a575b59" class="contact-link"><span class="__cf_email__" data-cfemail="107c7577717c507c7f737b7762717d3e737f7d">[email&#160;protected]</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form" onsubmit="submitContactForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Question</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="press">Media/Press</option>
+                                <option value="careers">Careers</option>
+                                <option value="security">Security Issue</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please provide as much detail as possible..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkbox-custom"></span>
+                            Subscribe to LockGram updates and news
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <span class="button-icon">📧</span>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect on Social Media</h2>
+                <p class="section-subtitle">Follow us for the latest updates, news, and community discussions</p>
+            </div>
+            
+            <div class="social-grid">
+                <a href="https://x.com/HamzaDZ33?t=fPLBUeHOESFW0YAZ6pHs_Q&s=09" class="social-card" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">🐦</div>
+                    <h3>Twitter</h3>
+                    <p>Follow for updates, news, and community discussions</p>
+                    <span class="social-handle">@HamzaDZ33</span>
+                </a>
+                
+                <a href="https://linkedin.com/company/lockgram" class="social-card" target="_blank">
+                    <div class="social-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Company updates and professional networking</p>
+                    <span class="social-handle">/company/lockgram</span>
+                </a>
+                
+                <a href="https://github.com/lockgram" class="social-card" target="_blank">
+                    <div class="social-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>Open source code and development updates</p>
+                    <span class="social-handle">@lockgram</span>
+                </a>
+                
+                <a href="https://discord.gg/lockgram" class="social-card" target="_blank">
+                    <div class="social-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>Join our community for real-time discussions</p>
+                    <span class="social-handle">discord.gg/lockgram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Information -->
+    <section class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Locations</h2>
+                <p class="section-subtitle">We're a global team working remotely from around the world</p>
+            </div>
+            
+            <div class="office-grid">
+                <div class="office-card">
+                    <h3>🌍 Global Headquarters</h3>
+                    <p><strong>Address:</strong> Remote-First Company</p>
+                    <p><strong>Time Zone:</strong> UTC (Coordinated Universal Time)</p>
+                    <p><strong>Best Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7605030606190402361a19151d1104171b5815191b">[email&#160;protected]</a></p>
+                </div>
+                
+                <div class="office-card">
+                    <h3>🌎 Americas</h3>
+                    <p><strong>Region:</strong> North & South America</p>
+                    <p><strong>Hours:</strong> 9 AM - 5 PM EST</p>
+                    <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a0b070f1803090b192a060509010d180b0744090507">[email&#160;protected]</a></p>
+                </div>
+                
+                <div class="office-card">
+                    <h3>🌍 Europe</h3>
+                    <p><strong>Region:</strong> European Union & UK</p>
+                    <p><strong>Hours:</strong> 9 AM - 5 PM CET</p>
+                    <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2d7c7c0ddc2d7f2deddd1d9d5c0d3df9cd1dddf">[email&#160;protected]</a></p>
+                </div>
+                
+                <div class="office-card">
+                    <h3>🌏 Asia-Pacific</h3>
+                    <p><strong>Region:</strong> Asia & Pacific</p>
+                    <p><strong>Hours:</strong> 9 AM - 5 PM JST</p>
+                    <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84e5f4e5e7c4e8ebe7efe3f6e5e9aae7ebe9">[email&#160;protected]</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Link -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-cta">
+                <h2>Looking for Quick Answers?</h2>
+                <p>Check out our comprehensive FAQ section for instant answers to common questions about LockGram.</p>
+                <a href="faq.html" class="cta-button primary large">
+                    <span class="button-icon">❓</span>
+                    View FAQ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <img src="https://i.imgur.com/b8Iyclt.png" alt="LockGram Logo" class="footer-logo">
+                        <h4 class="footer-heading">LockGram</h4>
+                        <p class="footer-text">The Future of Web3 Social - Privacy-first social networking with crypto rewards.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Product</h4>
+                            <a href="index.html" class="footer-link">Features</a>
+                            <a href="security.html" class="footer-link">Security</a>
+                            <a href="index.html" class="footer-link">Interface</a>
+                            <a href="faq.html" class="footer-link">FAQ</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Company</h4>
+                            <a href="about.html" class="footer-link">About</a>
+                            <a href="contact.html" class="footer-link">Contact</a>
+                            <a href="careers.html" class="footer-link">Careers</a>
+                            <a href="blog.html" class="footer-link">Blog</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Legal</h4>
+                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                            <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+                            <a href="security.html" class="footer-link">Security</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Connect</h4>
+                            <a href="https://x.com/HamzaDZ33?t=fPLBUeHOESFW0YAZ6pHs_Q&s=09" class="footer-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            <a href="https://linkedin.com/company/lockgram" class="footer-link">LinkedIn</a>
+                            <a href="https://github.com/lockgram" class="footer-link">GitHub</a>
+                            <a href="https://discord.gg/lockgram" class="footer-link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-compliance">
+                        <div class="compliance-badges-footer">
+                            <span class="compliance-badge">AES-256</span>
+                            <span class="compliance-badge">Open Source</span>
+                            <span class="compliance-badge">Web3</span>
+                            <span class="compliance-badge">Privacy-First</span>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 LockGram. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script>
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert(`Thank you for your message! We'll get back to you at ${data.email} within 24 hours.`);
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

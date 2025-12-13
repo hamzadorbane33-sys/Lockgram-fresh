@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - LockGram | Frequently Asked Questions</title>
+    <meta name="description" content="LockGram FAQ - Find answers to frequently asked questions about our Web3 social platform, LockCoin rewards, privacy features, and security.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://i.imgur.com/b8Iyclt.png" alt="LockGram Logo" class="logo-icon">
+                <span class="nav-logo">LockGram</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="security.html" class="nav-link">Security</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button class="cta-button primary" onclick="window.open('https://t.me/Lockgramapp_bot/Lockgrammini', '_blank')">
+                    <span class="button-icon">🚀</span>
+                    Get Android Early Access
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Frequently Asked Questions
+                        <span class="hero-accent">Find Answers</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Everything you need to know about LockGram, our Web3 social platform, LockCoin rewards, and privacy features.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-categories">
+                <button class="category-btn active" onclick="showCategory('general')">General</button>
+                <button class="category-btn" onclick="showCategory('lockcoin')">LockCoin</button>
+                <button class="category-btn" onclick="showCategory('privacy')">Privacy & Security</button>
+                <button class="category-btn" onclick="showCategory('platform')">Platform</button>
+                <button class="category-btn" onclick="showCategory('technical')">Technical</button>
+                <button class="category-btn" onclick="showCategory('account')">Account</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="section alt-bg">
+        <div class="container">
+            <!-- General Questions -->
+            <div class="faq-content active" id="general">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What is LockGram?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram is a privacy-first Web3 social platform that combines traditional social networking with cryptocurrency rewards. We offer end-to-end encryption, AI-powered features, and a fair reward system where users earn LockCoins for meaningful engagement and quality content creation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How is LockGram different from other social media platforms?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram differs in several key ways:</p>
+                        <ul>
+                            <li><strong>Privacy-first:</strong> End-to-end encryption and zero-knowledge architecture</li>
+                            <li><strong>User rewards:</strong> Earn LockCoins for genuine engagement and content creation</li>
+                            <li><strong>Web3 integration:</strong> True ownership of your data and digital assets</li>
+                            <li><strong>No tracking:</strong> No ads, trackers, or data selling</li>
+                            <li><strong>Fair compensation:</strong> Creators and users get rewarded for their contributions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is LockGram free to use?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! LockGram is completely free to use. There are no subscription fees, premium tiers, or hidden costs. You can start earning LockCoins immediately after joining, and all core features are available to everyone.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What platforms will LockGram be available on?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram will be available on multiple platforms:</p>
+                        <ul>
+                            <li><strong>Android:</strong> Native Android app (Early Access coming soon)</li>
+                            <li><strong>iOS:</strong> Native iPhone & iPad app (Coming Q2 2025)</li>
+                            <li><strong>Web:</strong> Browser-based platform</li>
+                            <li><strong>Desktop:</strong> Desktop apps for Windows, Mac, and Linux (Coming Q3 2025)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LockCoin Questions -->
+            <div class="faq-content" id="lockcoin">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What is LockCoin?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockCoin is our digital reward token that users can earn through platform engagement. It represents value within the LockGram ecosystem and can be used for various platform features and interactions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I earn LockCoins?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can earn LockCoins through:</p>
+                        <ul>
+                            <li><strong>Creating content:</strong> Post quality content that engages the community</li>
+                            <li><strong>Engaging with others:</strong> Meaningful interactions with other users' posts</li>
+                            <li><strong>Referrals:</strong> Invite friends to join LockGram</li>
+                            <li><strong>Community participation:</strong> Active, positive presence in the community</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do LockCoins have real monetary value?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockCoins are designed for use within the LockGram ecosystem. While they represent value and can be used for platform features, their primary purpose is to reward meaningful engagement and contributions to the community. LockCoin values and utility may evolve as the platform develops.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do I need a crypto wallet to use LockGram?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Not immediately! You can start using LockGram and earning LockCoins without a wallet. However, to access certain advanced features or withdraw LockCoins, you may need to connect a crypto wallet like MetaMask or Trust Wallet. We support all major wallets.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I transfer LockCoins to other users?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockCoin transfer functionality is part of our roadmap. Currently, LockCoins are earned through engagement and can be used within the platform. Future updates will include enhanced transfer and utility features.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy & Security Questions -->
+            <div class="faq-content" id="privacy">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How secure is LockGram?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram implements industry-leading security measures:</p>
+                        <ul>
+                            <li><strong>End-to-end encryption:</strong> AES-256 encryption for all messages</li>
+                            <li><strong>Zero-knowledge architecture:</strong> We cannot access your message content</li>
+                            <li><strong>Perfect forward secrecy:</strong> Each conversation uses unique encryption keys</li>
+                            <li><strong>Regular security audits:</strong> Third-party security assessments</li>
+                            <li><strong>Open source:</strong> Transparent codebase for security review</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What data does LockGram collect?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We follow a minimal data collection approach:</p>
+                        <ul>
+                            <li><strong>Account data:</strong> Email, username (required)</li>
+                            <li><strong>Content data:</strong> Your posts and messages (encrypted)</li>
+                            <li><strong>Usage data:</strong> Basic interaction data for platform improvement</li>
+                            <li><strong>Device data:</strong> Technical information for security and optimization</li>
+                        </ul>
+                        <p>We never sell your data, use it for advertising, or share it with third parties without your consent.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can LockGram read my messages?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. LockGram uses end-to-end encryption, which means messages are encrypted on your device before being sent and can only be decrypted by the intended recipient. Even we cannot read your message content.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is my location tracked?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, LockGram does not track your location. We don't use GPS, IP-based location services, or any location tracking mechanisms. Your privacy is protected by design.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How can I delete my account and data?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You have full control over your data. You can delete your account and all associated data at any time through the account settings. This includes:</p>
+                        <ul>
+                            <li>Deleting all your posts and content</li>
+                            <li>Removing your account information</li>
+                            <li>Clearing any cached data</li>
+                        </ul>
+                        <p>Contact <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ed9e989d9d829f99ad81828e868a9f8c80c38e8280">[email&#160;protected]</a> if you need assistance with account deletion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform Questions -->
+            <div class="faq-content" id="platform">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>When will LockGram be available?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram is currently in beta testing. Our development timeline includes:</p>
+                        <ul>
+                            <li><strong>Beta Release:</strong> Currently available for testing</li>
+                            <li><strong>Android App:</strong> Early Access program starting soon</li>
+                            <li><strong>iOS App:</strong> Planned for Q2 2025</li>
+                            <li><strong>Desktop Apps:</strong> Planned for Q3 2025</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What features will LockGram have?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram will include:</p>
+                        <ul>
+                            <li><strong>Social networking:</strong> Post, share, and engage with content</li>
+                            <li><strong>Private messaging:</strong> End-to-end encrypted conversations</li>
+                            <li><strong>AI assistants:</strong> Smart helpers for content optimization</li>
+                            <li><strong>Web3 integration:</strong> Wallet connection and blockchain features</li>
+                            <li><strong>Reward system:</strong> Earn LockCoins for engagement</li>
+                            <li><strong>Privacy controls:</strong> Granular privacy settings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Will there be content moderation?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, LockGram will have content moderation to ensure a safe and positive environment. Our approach includes:</p>
+                        <ul>
+                            <li><strong>AI-powered detection:</strong> Automated detection of harmful content</li>
+                            <li><strong>Community reporting:</strong> User-driven content reporting system</li>
+                            <li><strong>Privacy-respecting:</strong> Moderation that protects user privacy</li>
+                            <li><strong>Transparent policies:</strong> Clear community guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I import my existing social media followers?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're exploring ways to help users connect with their existing networks. This may include:</p>
+                        <ul>
+                            <li><strong>Contact importing:</strong> With your permission, import contacts who are also on LockGram</li>
+                            <li><strong>Social discovery:</strong> Find friends already on the platform</li>
+                            <li><strong>Invitation system:</strong> Easy ways to invite your network</li>
+                        </ul>
+                        <p>Privacy and user consent will always be our top priority.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Questions -->
+            <div class="faq-content" id="technical">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What technology powers LockGram?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram is built on modern, secure technology:</p>
+                        <ul>
+                            <li><strong>Encryption:</strong> AES-256, Curve25519, ChaCha20-Poly1305</li>
+                            <li><strong>Blockchain:</strong> Web3 integration for decentralized features</li>
+                            <li><strong>AI/ML:</strong> Machine learning for content optimization and moderation</li>
+                            <li><strong>Cloud infrastructure:</strong> Secure, scalable cloud hosting</li>
+                            <li><strong>Open source:</strong> Transparent development process</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is LockGram open source?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We believe in transparency and community-driven development. Our code is open source and available on GitHub, allowing security researchers and developers to review, contribute, and help improve the platform.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What browsers are supported?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram web version supports all modern browsers:</p>
+                        <ul>
+                            <li><strong>Chrome:</strong> Latest versions</li>
+                            <li><strong>Firefox:</strong> Latest versions</li>
+                            <li><strong>Safari:</strong> Latest versions</li>
+                            <li><strong>Edge:</strong> Latest versions</li>
+                        </ul>
+                        <p>We recommend keeping your browser updated for the best security and performance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How much data does LockGram use?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>LockGram is designed to be data-efficient:</p>
+                        <ul>
+                            <li><strong>Messages:</strong> Encrypted but compressed for efficiency</li>
+                            <li><strong>Media:</strong> Optimized images and videos</li>
+                            <li><strong>Background sync:</strong> Minimal data usage when inactive</li>
+                        </ul>
+                        <p>Actual usage depends on your activity level and media consumption.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I use LockGram offline?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Limited offline functionality is planned:</p>
+                        <ul>
+                            <li><strong>Message drafts:</strong> Compose messages offline</li>
+                            <li><strong>Cached content:</strong> View recently loaded content</li>
+                            <li><strong>Sync when online:</strong> Automatic synchronization when connection is restored</li>
+                        </ul>
+                        <p>Full offline messaging will be available in future updates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Questions -->
+            <div class="faq-content" id="account">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I create an account?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Creating an account is simple:</p>
+                        <ol>
+                            <li>Visit our website or download the app</li>
+                            <li>Click "Sign Up" or "Get Started"</li>
+                            <li>Provide your email address</li>
+                            <li>Choose a unique username</li>
+                            <li>Create a secure password</li>
+                            <li>Verify your email address</li>
+                            <li>Start using LockGram!</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I change my username?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can change your username, but there are some considerations:</p>
+                        <ul>
+                            <li>Username changes may be limited to prevent abuse</li>
+                            <li>Previous usernames may become available to others</li>
+                            <li>Some integrations may be affected by username changes</li>
+                        </ul>
+                        <p>We recommend choosing your username carefully during registration.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I reset my password?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you forget your password:</p>
+                        <ol>
+                            <li>Go to the login page</li>
+                            <li>Click "Forgot Password"</li>
+                            <li>Enter your email address</li>
+                            <li>Check your email for reset instructions</li>
+                            <li>Follow the link to create a new password</li>
+                        </ol>
+                        <p>If you don't receive the email, check your spam folder or contact support.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I have multiple accounts?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend having one account per person for the best experience. Multiple accounts may be limited to prevent abuse and ensure fair distribution of LockCoin rewards. If you need multiple accounts for legitimate purposes, please contact our support team.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I delete my account?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To delete your account:</p>
+                        <ol>
+                            <li>Log into your account</li>
+                            <li>Go to Settings/Account</li>
+                            <li>Find "Delete Account" option</li>
+                            <li>Confirm your decision</li>
+                            <li>Your account and data will be permanently deleted</li>
+                        </ol>
+                        <p>This action cannot be undone. Contact support if you need assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="section">
+        <div class="container">
+            <div class="support-cta">
+                <h2>Still Have Questions?</h2>
+                <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-button primary large">
+                        <span class="button-icon">📧</span>
+                        Contact Support
+                    </a>
+                    <button class="cta-button secondary large" onclick="window.open('https://t.me/Lockgramapp_bot/Lockgrammini', '_blank')">
+                        <span class="button-icon">🚀</span>
+                        Get Android Early Access
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <img src="https://i.imgur.com/b8Iyclt.png" alt="LockGram Logo" class="footer-logo">
+                        <h4 class="footer-heading">LockGram</h4>
+                        <p class="footer-text">The Future of Web3 Social - Privacy-first social networking with crypto rewards.</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Product</h4>
+                            <a href="index.html" class="footer-link">Features</a>
+                            <a href="security.html" class="footer-link">Security</a>
+                            <a href="index.html" class="footer-link">Interface</a>
+                            <a href="faq.html" class="footer-link">FAQ</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Company</h4>
+                            <a href="about.html" class="footer-link">About</a>
+                            <a href="contact.html" class="footer-link">Contact</a>
+                            <a href="careers.html" class="footer-link">Careers</a>
+                            <a href="blog.html" class="footer-link">Blog</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Legal</h4>
+                            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                            <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+                            <a href="security.html" class="footer-link">Security</a>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-heading">Connect</h4>
+                            <a href="https://twitter.com/lockgram" class="footer-link">Twitter</a>
+                            <a href="https://linkedin.com/company/lockgram" class="footer-link">LinkedIn</a>
+                            <a href="https://github.com/lockgram" class="footer-link">GitHub</a>
+                            <a href="https://discord.gg/lockgram" class="footer-link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-compliance">
+                        <div class="compliance-badges-footer">
+                            <span class="compliance-badge">AES-256</span>
+                            <span class="compliance-badge">Open Source</span>
+                            <span class="compliance-badge">Web3</span>
+                            <span class="compliance-badge">Privacy-First</span>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 LockGram. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script>
+        function showCategory(category) {
+            // Hide all categories
+            document.querySelectorAll('.faq-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected category
+            document.getElementById(category).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+        
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                toggle.textContent = '+';
+            } else {
+                answer.style.display = 'block';
+                toggle.textContent = '−';
+            }
+        }
+        
+        // Initialize FAQ items as hidden
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-answer').forEach(answer => {
+                answer.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
