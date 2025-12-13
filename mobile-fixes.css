@@ -1,0 +1,106 @@
+/* MOBILE FIXES FOR LOCKGRAM WEBSITE */
+/* Add these rules to your styles.css */
+
+/* 1. CONTAINER PADDING - Fix content touching edges */
+.container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Hero section specific padding */
+.hero .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* 2. ELEMENT OVERLAPPING - Fix decorative elements */
+.hero-background {
+    z-index: -1 !important; /* Move behind content */
+}
+
+/* Chat widget positioning on mobile */
+.chat-widget {
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 1000 !important;
+}
+
+/* 3. BUTTON ALIGNMENT - Fix icons and text */
+.cta-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-align: center !important;
+    padding: 12px 24px !important;
+}
+
+/* Button icon positioning */
+.cta-button .button-icon {
+    display: inline-block !important;
+    margin-right: 0 !important;
+}
+
+/* 4. MOBILE SPECIFIC STYLES */
+@media (max-width: 768px) {
+    /* Reduce font sizes for mobile */
+    .hero-title {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Button stack on mobile */
+    .hero-cta {
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+    
+    /* Section spacing */
+    .section {
+        padding: 40px 0 !important;
+    }
+    
+    /* Card spacing */
+    .features-grid,
+    .metrics-grid {
+        gap: 16px !important;
+    }
+    
+    /* Navigation adjustments */
+    .nav-menu {
+        padding: 20px !important;
+    }
+}
+
+/* 5. FIX SPECIFIC OVERLAPPING ISSUES */
+.newsletter {
+    padding-bottom: 80px !important; /* Space for chat widget */
+}
+
+/* Footer adjustments */
+.footer {
+    padding-bottom: 60px !important;
+}
+
+/* 6. BUILDING WITH SECTION FIX */
+.hero-social-proof {
+    margin-top: 32px !important;
+    padding-bottom: 20px !important;
+}
+
+/* 7. METRICS SECTION MOBILE */
+.metrics-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
+}
+
+/* 8. FEATURES SECTION MOBILE */
+.features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+}
