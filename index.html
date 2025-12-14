@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Web3 Social</title>
+    <meta name="description" content="The Future of Web3 Social - Experience privacy-first social networking with crypto rewards, end-to-end encryption, and AI-powered features. LockGram Android app coming soon.">
+    <meta name="keywords" content="LockGram, Web3 social, Android app, privacy-first, crypto rewards, LockCoin, end-to-end encryption, AI features">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lockgram.com">
+    <meta property="og:title" content="The Future of Web3 Social">
+    <meta property="og:description" content="The Future of Web3 Social - Experience privacy-first social networking with crypto rewards, end-to-end encryption, and AI-powered features. LockGram Android app coming soon.">
+    <meta property="og:image" content="https://lockgram.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lockgram.com">
+    <meta property="twitter:title" content="The Future of Web3 Social">
+    <meta property="twitter:description" content="The Future of Web3 Social - Experience privacy-first social networking with crypto rewards, end-to-end encryption, and AI-powered features. LockGram Android app coming soon.">
+    <meta property="twitter:image" content="https://lockgram.com/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4F46E5">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- ANIMATED BLUE DOTS BACKGROUND -->
+    <style>
+    /* Animated Blue Dots Background - Added to existing file */
+    body {
+        position: relative;
+    }
+    
+    /* Animated floating blue dots */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at 20% 20%, rgba(0, 229, 255, 0.3) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(0, 229, 255, 0.2) 0%, transparent 50%),
+            radial-gradient(circle at 40% 60%, rgba(0, 229, 255, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 60% 40%, rgba(0, 229, 255, 0.15) 0%, transparent 50%);
+        animation: float 20s ease-in-out infinite;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    /* Additional floating blue particles */
+    body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(2px 2px at 20px 30px, rgba(0, 229, 255, 0.8), transparent),
+            radial-gradient(2px 2px at 40px 70px, rgba(0, 229, 255, 0.6), transparent),
+            radial-gradient(1px 1px at 90px 40px, rgba(0, 229, 255, 0.4), transparent),
+            radial-gradient(1px 1px at 130px 80px, rgba(0, 229, 255, 0.5), transparent),
+            radial-gradient(2px 2px at 160px 30px, rgba(0, 229, 255, 0.7), transparent);
+        background-repeat: repeat;
+        background-size: 200px 100px;
+        animation: sparkle 15s linear infinite;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        33% { transform: translateY(-30px) rotate(1deg); }
+        66% { transform: translateY(15px) rotate(-1deg); }
+    }
+    
+    @keyframes sparkle {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-200px); }
+    }
+    </style>
+    
+    <!-- MOBILE FIXES - EMBEDDED CSS -->
+    <style>
+    /* MOBILE FIXES FOR LOCKGRAM - EMBEDDED */
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .container, .hero .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .hero-content {
+        padding: 20px 0 !important;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 16px !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 24px !important;
+        padding: 0 4px !important;
+    }
+    
+    .hero-cta {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        align-items: center !important;
+        margin-top: 24px !important;
+    }
+    
+    .cta-button {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        padding: 16px 24px !important;
+        text-align: center !important;
+        border-radius: 8px !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
+    }
+    
+    .hero-social-proof {
+        margin-top: 32px !important;
+        padding: 16px 0 !important;
+        text-align: center !important;
+    }
+    
+    .chat-widget {
+        position: fixed !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        z-index: 9999 !important;
+        width: 56px !important;
+        height: 56px !important;
+    }
+    
+    .footer {
+        padding-bottom: 80px !important;
+    }
+    
+    .newsletter {
+        padding-bottom: 100px !important;
+    }
+    
+    /* Background fixes */
+    .hero-background {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: -1 !important;
+        opacity: 0.1 !important;
+    }
+    
+
+    
+    /* Features section mobile */
+    .features-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        margin-top: 24px !important;
+    }
+    
+    /* Company logos mobile */
+    .company-logos {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        margin-top: 12px !important;
+    }
+    
+    .logo-placeholder {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+        background: rgba(79, 70, 229, 0.2) !important;
+        border-radius: 20px !important;
+        color: #4F46E5 !important;
+    }
+    
+    /* How It Works Section */
+    .how-it-works {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+    
+    /* Section title color for how-it-works */
+    .how-it-works .section-title {
+        color: #00e5ff !important;
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: #00e5ff !important;
+        background-clip: initial !important;
+    }
+    
+    /* Section subtitle color for how-it-works */
+    .how-it-works .section-subtitle {
+        color: #FFFFFF !important;
+    }
+    
+    /* LockCoin Section Styling */
+    .lockcoin-section {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .lockcoin-header {
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative;
+    }
+    
+    .lockcoin-logo {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        display: block;
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .lockcoin-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+        color: #FFFFFF;
+        background: linear-gradient(90deg, #00e5ff, #ff00c8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .token-symbol {
+        background: linear-gradient(90deg, #00e5ff, #00E676);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 2.5rem;
+    }
+    
+    .lockcoin-subtitle {
+        font-size: 1.4rem;
+        color: #cccccc;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .lockcoin-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .lockcoin-description {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .main-description {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        color: #e0e0e0;
+        max-width: 800px;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    
+    .lockcoin-features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .lockcoin-feature {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 30px 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .lockcoin-feature::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #00e5ff, #00E676);
+    }
+    
+    .lockcoin-feature:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(0, 229, 255, 0.3);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .lockcoin-feature .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        display: block;
+        filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
+    }
+    
+    .lockcoin-feature .feature-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #FFFFFF;
+    }
+    
+    .lockcoin-feature .feature-text {
+        color: #cccccc;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+    
+    .lockcoin-cta {
+        text-align: center;
+        background: linear-gradient(135deg, rgba(0, 229, 255, 0.1) 0%, rgba(0, 230, 118, 0.1) 100%);
+        border: 1px solid rgba(0, 229, 255, 0.2);
+        border-radius: 25px;
+        padding: 40px 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .lockcoin-cta::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+        animation: shimmer 3s linear infinite;
+        pointer-events: none;
+    }
+    
+    @keyframes shimmer {
+        0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    }
+    
+    .cta-text {
+        margin-bottom: 25px;
+    }
+    
+    .cta-highlight {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #00e5ff;
+    }
+    
+    .lockcoin-cta .cta-button {
+        background: linear-gradient(135deg, #00e5ff, #00E676) !important;
+        color: #0a0a0a !important;
+        border: none !important;
+        font-size: 1.2rem !important;
+        padding: 16px 32px !important;
+        border-radius: 25px !important;
+        font-weight: 700 !important;
+        box-shadow: 0 8px 25px rgba(0, 229, 255, 0.3);
+        transition: all 0.3s ease !important;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .lockcoin-cta .cta-button:hover {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 12px 35px rgba(0, 229, 255, 0.4) !important;
+    }
+    
+    .steps-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+    }
+    
+    .step-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 30px 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .step-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #00e5ff, #ff00c8);
+    }
+    
+    .step-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(0, 229, 255, 0.3);
+    }
+    
+    .step-number {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        font-weight: normal !important;
+    }
+    
+    .step-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #ffffff;
+    }
+    
+    .step-description {
+        color: #cccccc;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+    
+    /* Social Post Card Styling */
+    .social-post-card {
+        background: #121212 !important;
+        border: 1px solid #333333 !important;
+        border-radius: 24px !important;
+        padding: 20px !important;
+    }
+    
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .brand-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .brand-icon {
+        font-size: 18px;
+        color: #888888;
+    }
+    
+    .brand-name {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .balance-info {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    .balance-icon {
+        font-size: 14px;
+        color: #FFD700;
+    }
+    
+    .balance-amount {
+        color: #00E676;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    .social-post {
+        background: #1C1C1E;
+        border-radius: 16px;
+        padding: 20px;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #00B0FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #121212;
+    }
+    
+    .user-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .username {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    
+    .timestamp {
+        color: #8E8E93;
+        font-size: 12px;
+    }
+    
+    .post-content {
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    /* Force text wrapping */
+    h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+    
+    p {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+    
+    /* Mobile specific overrides */
+    @media (max-width: 768px) {
+        .theme-toggle-container {
+            position: fixed !important;
+            top: 80px !important;
+            right: 16px !important;
+            z-index: 9998 !important;
+        }
+        
+        .section {
+            padding: 40px 0 !important;
+        }
+        
+        .how-it-works {
+            padding: 50px 0 !important;
+        }
+        
+        .steps-container {
+            grid-template-columns: 1fr !important;
+            gap: 20px !important;
+            margin-top: 30px !important;
+        }
+        
+        .step-card {
+            padding: 25px 20px !important;
+        }
+        
+        .step-number {
+            font-size: 2.5rem !important;
+            margin-bottom: 15px !important;
+        }
+        
+        .step-title {
+            font-size: 1.1rem !important;
+            margin-bottom: 12px !important;
+        }
+        
+        .step-description {
+            font-size: 0.9rem !important;
+        }
+        
+        .social-post-card {
+            padding: 15px !important;
+        }
+        
+        .post-header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 8px !important;
+        }
+        
+        .brand-name, .balance-amount {
+            font-size: 14px !important;
+        }
+        
+        .social-post {
+            padding: 15px !important;
+        }
+        
+        .user-avatar {
+            width: 35px !important;
+            height: 35px !important;
+            font-size: 16px !important;
+        }
+        
+        .post-content {
+            font-size: 13px !important;
+        }
+        
+        /* LockCoin Section Mobile */
+        .lockcoin-section {
+            padding: 50px 0 !important;
+        }
+        
+        .lockcoin-logo {
+            font-size: 3rem !important;
+            margin-bottom: 15px !important;
+        }
+        
+        .lockcoin-title {
+            font-size: 2.5rem !important;
+            margin-bottom: 12px !important;
+        }
+        
+        .token-symbol {
+            font-size: 2rem !important;
+        }
+        
+        .lockcoin-subtitle {
+            font-size: 1.1rem !important;
+        }
+        
+        .main-description {
+            font-size: 1.1rem !important;
+            margin-bottom: 40px !important;
+        }
+        
+        .lockcoin-features {
+            grid-template-columns: 1fr !important;
+            gap: 20px !important;
+            margin-bottom: 40px !important;
+        }
+        
+        .lockcoin-feature {
+            padding: 25px 20px !important;
+        }
+        
+        .lockcoin-feature .feature-icon {
+            font-size: 2.5rem !important;
+            margin-bottom: 15px !important;
+        }
+        
+        .lockcoin-feature .feature-title {
+            font-size: 1.2rem !important;
+            margin-bottom: 12px !important;
+        }
+        
+        .lockcoin-feature .feature-text {
+            font-size: 0.9rem !important;
+        }
+        
+        .lockcoin-cta {
+            padding: 30px 20px !important;
+        }
+        
+        .cta-highlight {
+            font-size: 1.3rem !important;
+        }
+        
+        .lockcoin-cta .cta-button {
+            font-size: 1rem !important;
+            padding: 14px 28px !important;
+        }
+    }
+    </style>
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience and analyze usage. By continuing, you agree to our <a href="/privacy">Privacy Policy</a>.</p>
+            <div class="cookie-buttons">
+                <button onclick="acceptCookies()" class="cookie-accept">Accept</button>
+                <button onclick="showCookiePreferences()" class="cookie-preferences">Preferences</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="https://i.imgur.com/b8Iyclt.png" alt="Lockgram Logo" class="logo-icon">
+                <span class="logo-text">Lockgram</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#platform" class="nav-link">Platform</a>
+                <a href="#rewards" class="nav-link">Rewards</a>
+                <a href="#security" class="nav-link">Security</a>
+                <a href="#roadmap" class="nav-link">Interface</a>
+                <a href="#team" class="nav-link">Platform</a>
+                <button class="cta-button primary" onclick="openAndroidApp()">
+                    <span class="button-icon">📱</span>
+                    Get Early Access
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        The Future of Web3 Social
+                    </h1>
+                    <p class="hero-subtitle">
+                        Experience privacy-first social networking with crypto rewards, end-to-end encryption, and AI-powered features. LockGram Android app coming soon.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <button class="cta-button primary large" onclick="openAndroidApp()">
+                            <span class="button-icon">🚀</span>
+                            Get Android Early Access
+                        </button>
+                        <button class="cta-button secondary large" onclick="scrollToSection('security')">
+                            <span class="button-icon">🔒</span>
+                            View Security
+                        </button>
+                    </div>
+                    
+                    <div class="hero-social-proof">
+                        <p class="social-proof-text">Building with:</p>
+                        <div class="company-logos">
+                            <div class="logo-placeholder">Android</div>
+                            <div class="logo-placeholder">Web3 Tech</div>
+                            <div class="logo-placeholder">Privacy First</div>
+                            <div class="logo-placeholder">Crypto Rewards</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="app-mockup">
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="mockup-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="mockup-title">Lockgram</div>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-number">Beta</div>
+                                        <div class="stat-label">Testing Phase</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">TG</div>
+                                        <div class="stat-label">Mini-App Live</div>
+                                    </div>
+                                </div>
+                                <div class="mockup-chart">
+                                    <div class="chart-line"></div>
+                                    <div class="chart-points">
+                                        <span class="point"></span>
+                                        <span class="point"></span>
+                                        <span class="point"></span>
+                                        <span class="point"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Privacy-First Features</h2>
+                <p class="section-subtitle">Privacy-first by design, built for Web3 community</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 class="feature-title">End-to-End Encryption</h3>
+                    <p class="feature-description">Military-grade AES-256 encryption ensures your communications remain private and secure.</p>
+                    <div class="feature-benefits">
+                        <span class="benefit">✓ Zero-knowledge architecture</span>
+                        <span class="benefit">✓ Forward secrecy</span>
+                        <span class="benefit">✓ Perfect forward secrecy</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI-Powered Assistant</h3>
+                    <p class="feature-description">Smart suggestions and community-driven content curation for better user experience.</p>
+                    <div class="feature-benefits">
+                        <span class="benefit">✓ Context-aware responses</span>
+                        <span class="benefit">✓ Automated workflows</span>
+                        <span class="benefit">✓ Predictive analytics</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">LockCoins Rewards</h3>
+                    <p class="feature-description">Incentivized participation through our native cryptocurrency and reward system.</p>
+                    <div class="feature-benefits">
+                        <span class="benefit">✓ Daily rewards</span>
+                        <span class="benefit">✓ Social engagement tokens</span>
+                        <span class="benefit">✓ Staking opportunities</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Cross-Platform</h3>
+                    <p class="feature-description">Seamless experience across iOS, Android, and Desktop applications.</p>
+                    <div class="feature-benefits">
+                        <span class="benefit">✓ Real-time sync</span>
+                        <span class="benefit">✓ Offline support</span>
+                        <span class="benefit">✓ Cloud backup</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Web3 Integration</h3>
+                    <p class="feature-description">Built on blockchain technology with true ownership and decentralized architecture.</p>
+                    <div class="feature-benefits">
+                        <span class="benefit">✓ Wallet integration</span>
+                        <span class="benefit">✓ NFT support</span>
+                        <span class="benefit">✓ DeFi compatibility</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Web3 Analytics</h3>
+                    <p class="feature-description">Track your LockCoin earnings, engagement metrics, and network growth in our decentralized ecosystem.</p>
+                    <div class="feature-benefits">
+                        <span class="benefit">✓ Usage analytics</span>
+                        <span class="benefit">✓ Custom dashboards</span>
+                        <span class="benefit">✓ API access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- LockCoin Section -->
+    <section class="lockcoin-section">
+        <div class="container">
+            <div class="lockcoin-header">
+                <div class="lockcoin-logo">💎</div>
+                <h2 class="lockcoin-title">LockCoin <span class="token-symbol">($LOCK)</span></h2>
+                <p class="lockcoin-subtitle">The fuel behind LockGram</p>
+            </div>
+            
+            <div class="lockcoin-content">
+                <div class="lockcoin-description">
+                    <p class="main-description">
+                        LockCoin ($LOCK) is the fuel behind LockGram — a fast, low-cost Solana-based token designed to power rewards, access, and value exchange in a new generation of social apps.
+                    </p>
+                </div>
+                
+                <div class="lockcoin-features">
+                    <div class="lockcoin-feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-text">Built on Solana blockchain for instant transactions</p>
+                    </div>
+                    
+                    <div class="lockcoin-feature">
+                        <div class="feature-icon">💰</div>
+                        <h3 class="feature-title">Low Cost</h3>
+                        <p class="feature-text">Minimal fees for all rewards and transactions</p>
+                    </div>
+                    
+                    <div class="lockcoin-feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3 class="feature-title">Power Rewards</h3>
+                        <p class="feature-text">Fuel for all LockGram social rewards system</p>
+                    </div>
+                    
+                    <div class="lockcoin-feature">
+                        <div class="feature-icon">🔄</div>
+                        <h3 class="feature-title">Value Exchange</h3>
+                        <p class="feature-text">Seamless trading and withdrawal capabilities</p>
+                    </div>
+                </div>
+                
+                <div class="how-it-works-subsection">
+                    <div class="section-header">
+                        <h3 class="section-title" style="color: white;">HOW IT WORKS</h3>
+                        <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.9);">Get started with LockGram in 4 simple steps</p>
+                    </div>
+                    
+                    <div class="steps-container">
+                        <div class="step-card">
+                            <div class="step-number">🚀</div>
+                            <h3 class="step-title">Join LockGram</h3>
+                            <p class="step-description">Download the app and create your account to start your Web3 social journey</p>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">👥</div>
+                            <h3 class="step-title">Be Active & Invite Friends</h3>
+                            <p class="step-description">Create content, engage with posts, and invite friends to build your community</p>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">💰</div>
+                            <h3 class="step-title">Earn LockCoin</h3>
+                            <p class="step-description">Get rewarded with LockCoins for every interaction, post, and successful referral</p>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">🔄</div>
+                            <h3 class="step-title">Swap & Withdraw</h3>
+                            <p class="step-description">Trade your LockCoins or withdraw them to your crypto wallet anytime</p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+                <div class="lockcoin-cta" style="margin-top: 2rem;">
+                    <div class="cta-text">
+                        <span class="cta-highlight">Ready to earn your first LockCoins?</span>
+                    </div>
+                    <button class="cta-button primary" onclick="scrollToSection('rewards')">
+                        <span class="button-icon">🚀</span>
+                        Start Earning Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security" id="security">
+        <div class="container">
+            <div class="security-content">
+                <div class="security-text">
+                    <h2 class="section-title">Security & Privacy Standards</h2>
+                    <p class="section-subtitle">Privacy-first by design with client-side encryption</p>
+                    
+                    <div class="security-features">
+                        <div class="security-feature">
+                            <div class="security-icon">🛡️</div>
+                            <div class="security-details">
+                                <h4>AES-256 Encryption</h4>
+                                <p>No ads. No trackers. Data minimized.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <div class="security-icon">🔒</div>
+                            <div class="security-details">
+                                <h4>Zero-Knowledge Architecture</h4>
+                                <p>Your data is encrypted before it reaches our servers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <div class="security-icon">🏥</div>
+                            <div class="security-details">
+                                <h4>Client-Side Encryption</h4>
+                                <p>Your conversations are encrypted before leaving your device</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button primary" onclick="scrollToSection('roadmap')">
+                        <span class="button-icon">📱</span>
+                        View Interface Demo
+                    </button>
+                </div>
+                
+                <div class="security-visual">
+                    <div class="compliance-badges">
+                        <div class="badge">
+                            <div class="badge-logo">🔒</div>
+                            <div class="badge-text">Privacy-First</div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-logo">🔐</div>
+                            <div class="badge-text">Client-Side</div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-logo">🚫</div>
+                            <div class="badge-text">No Ads</div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-logo">📊</div>
+                            <div class="badge-text">Data Minimized</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Platform Availability Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Platform Availability</h2>
+                <p class="section-subtitle">LockGram coming to your favorite platforms</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="member-photo platform-icon">🤖</div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">Android App</h4>
+                        <p class="member-role">Early Access</p>
+                        <p class="member-bio">Native Android app with full Web3 social features. Join our waitlist for early access to the Android app.</p>
+                        <div class="member-links">
+                            <span class="member-link">Join Waitlist</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="member-photo platform-icon">🍎</div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">iOS App</h4>
+                        <p class="member-role">Coming Soon</p>
+                        <p class="member-bio">Native iPhone & iPad app optimized for Apple ecosystem with seamless integration and security features.</p>
+                        <div class="member-links">
+                            <span class="member-link">Q2 2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="member-photo platform-icon">💻</div>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">Desktop App</h4>
+                        <p class="member-role">Coming Soon</p>
+                        <p class="member-bio">Desktop version for Windows, Mac, and Linux with full desktop experience and keyboard shortcuts.</p>
+                        <div class="member-links">
+                            <span class="member-link">Q3 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3 class="newsletter-title">Stay Updated</h3>
+                    <p class="newsletter-subtitle">Get the latest product updates and security insights</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" class="email-input">
+                        <button class="subscribe-button">Subscribe</button>
+                    </div>
+                    <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <img src="https://i.imgur.com/b8Iyclt.png" alt="Lockgram Logo" class="footer-logo">
+                        <span class="footer-text">Lockgram</span>
+                    </div>
+                    <p class="footer-description">
+                        Early-stage Web3 social app building privacy-first social networking in beta.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Platform</h4>
+                        <a href="#platform" class="footer-link">Features</a>
+                        <a href="#security" class="footer-link">Security</a>
+                        <a href="#roadmap" class="footer-link">Interface</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Company</h4>
+                        <a href="/about" class="footer-link">About</a>
+                        <a href="/blog" class="footer-link">Blog</a>
+                        <a href="/press" class="footer-link">Press</a>
+                        <a href="/contact" class="footer-link">Contact</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Legal</h4>
+                        <a href="/privacy" class="footer-link">Privacy Policy</a>
+                        <a href="/terms" class="footer-link">Terms of Service</a>
+                        <a href="/security" class="footer-link">Security</a>
+                        <a href="/security" class="footer-link">Security</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Connect</h4>
+                        <a href="https://x.com/HamzaDZ33?t=fPLBUeHOESFW0YAZ6pHs_Q&s=09" class="footer-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        <a href="https://linkedin.com/company/lockgram" class="footer-link">LinkedIn</a>
+                        <a href="https://github.com/lockgram" class="footer-link">GitHub</a>
+                        <a href="https://discord.gg/lockgram" class="footer-link">Discord</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Lockgram. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-button">
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle-container">
+        <button class="theme-toggle" onclick="toggleTheme()" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
